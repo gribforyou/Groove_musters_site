@@ -1,0 +1,29 @@
+.accordion {
+    --bs-accordion-btn-bg: #515151;
+    --bs-accordion-active-bg: #515151;
+    --bs-accordion-active-color: #white;
+    --bs-accordion-bg: #515151;
+    --bs-accordion-color: white;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-focus-border-color: unset;
+    --bs-accordion-btn-color: white;
+    --bs-accordion-border-radius: 0px;
+    border: none; /* Убираем границу вокруг всего аккордеона */
+  }
+  
+  accordion- .accordion-button {
+    border-top: 1px solid white;
+  }
+  
+  .accordion .accordion-item:last-child .accordion-button.collapsed,
+  .accordion .accordion-item:last-child .accordion-body {
+    border-bottom: 1px solid white;
+  }
+  
+  .accordion-button::after {
+    background-image: url("file:///C:/Users/MSI/Documents/Groove_musters_site/style/plus-svgrepo-com.svg");
+    transition: all 0.5s;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("file:///C:/Users/MSI/Documents/Groove_musters_site/style/minus-svgrepo-com.svg");
+  }

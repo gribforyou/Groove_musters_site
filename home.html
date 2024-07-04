@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src = "script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”></head>
 <body>
+
     <nav class="navbar navbar-dark fixed-top">
         <div class="container-fluid justify-content-end">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="background-color: #212121;">
@@ -38,12 +40,12 @@
       </div>
     </nav>
 
-    <div class="containter-fluid" style = "height: 500px; background-image: url(placeholder-image.png); background-size: cover; background-position: center;">
+    <div class="containter-fluid" style = "height: 500px; background-image: url(gameplay.png); background-size: cover; background-position: center;">
         <div class="row align-items-end p-5" style = "height: 100%;">
             <div class="col-4">
                 <p class="h1" style = "font-size: 50px; color: white;">Game title</p>
                 <p style = "color: white;">New dynamic rhythm game</p>
-                <button type ="button" class = "btn btn-outline-light">PLay now!</button>
+                <button onclick = "openDownload();" type ="button" class = "btn btn-outline-light">PLay now!</button>
             </div>
         </div>
     </div>
@@ -61,37 +63,41 @@
         <div class="row justify-content-between p-3">
                <div class="col-fluid col-md-7">
                  <center>
-                    <img src="iro-wo-nakushita-amethyst.png" class="img-fluid" alt="..." width = 100%>
+                    <img id = "cover_image" src="iro-wo-nakushita-amethyst.png" class="img-fluid" alt="..." width = 100%>
                      <p class="h3 align-self-start">Iro wo Nakushita Amethyst</p>
-                     <audio controls style="width: 100%;">
-                        <source src="horse.ogg" type="audio/ogg">
+                     <audio controls  id = "cover_audio" style="width: 100%;">
+                        <source src="iro-wo-nakushita-amethyst-preview.mp3" type="audio/ogg">
                       </audio>
                  </center>    
                 </div>
             
+
+
                 <div class = "col-fluid col-md-4">
                   <div class="accordion" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                          01.07
+                        <button class="accordion-button"  type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          02.07
                         </button>
                       </h2>
                       <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                         <div class="accordion-body">
-                          <button type="button" class="btn btn-light"></button>
+                          <button type="button"onclick="openIro();" class="btn btn-light">Iro Wo Nakushita Amethyst</button>
                         </div>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                          02.07
+                          01.07
                         </button>
                       </h2>
                       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          <button type="button" onclick = "openRengoku();" class ="btn btn-light">Rengoku serenade</button>
+                          <button type="button" onclick = "openSoleil();" class ="btn btn-light">Soleil</button>
+
                         </div>
                       </div>
                     </div>
