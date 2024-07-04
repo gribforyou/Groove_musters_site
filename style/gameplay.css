@@ -21,9 +21,14 @@
   }
   
   .accordion-button::after {
-    background-image: url("file:///C:/Users/MSI/Documents/Groove_musters_site/style/plus-svgrepo-com.svg");
+    background-image: url("file:///C:/Users/MSI/Documents/Groove_musters_site/pictures/plus-svgrepo-com.svg");
     transition: all 0.5s;
   }
   .accordion-button:not(.collapsed)::after {
-    background-image: url("file:///C:/Users/MSI/Documents/Groove_musters_site/style/minus-svgrepo-com.svg");
+    background-image: url("file:///C:/Users/MSI/Documents/Groove_musters_site/pictures/minus-svgrepo-com.svg");
   }
+
+  a {
+    color: white;
+    text-decoration: none;
+ }
